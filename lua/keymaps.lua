@@ -61,4 +61,10 @@ vim.keymap.set({ 'n', 'x', 'o' }, 'F', function()
   require('flash').treesitter()
 end, { desc = 'Flash Treesitter' })
 
+-- noice notification dismiss
+vim.keymap.set('n', '<leader>n', function()
+  require('noice').dismiss 'notify'
+end, { desc = 'Dismiss notify' })
 -- vim: ts=2 sts=2 sw=2 et
+--
+vim.keymap.set('n', '<leader>rr', ':%s/\\<<C-r><C-w>\\>//g<left><left>', { desc = 'replace an occurrence of a word in a file' })
