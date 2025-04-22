@@ -63,7 +63,7 @@ end, { desc = 'Flash Treesitter' })
 
 -- notify.nvim mappings
 vim.keymap.set('n', '<leader>n', function()
-  require('notify').dismiss({ silent = true, pending = true })
+  require('notify').dismiss { silent = true, pending = true }
 end, { desc = 'Dismiss all notifications' })
 
 -- vim: ts=2 sts=2 sw=2 et
