@@ -26,7 +26,7 @@ return {
     open_for_directories = false,
     keymaps = {
       show_help = "<f1>",
-    },
+   },
   },
   init = function()
     -- More details: https://github.com/mikavilpas/yazi.nvim/issues/802

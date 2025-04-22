@@ -53,6 +53,8 @@ require('lazy').setup({
 
   require 'plugins/tmux_nav',
 
+  require 'plugins/dadbod-ui',
+
   -- theme
   require 'plugins/catppuccin',
   -- require 'plugins/tokyonight',
@@ -74,7 +76,7 @@ require('lazy').setup({
   -- require 'plugins.neo-tree',
   require 'plugins/yazi',
 
-  require 'plugins/smear_cursor',
+  require 'plugins/smear_curosr',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
