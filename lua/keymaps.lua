@@ -68,4 +68,6 @@ end, { desc = 'Dismiss all notifications' })
 
 -- vim: ts=2 sts=2 sw=2 et
 --
-vim.keymap.set('n', '<leader>rr', ':%s/\\<<C-r><C-w>\\>//g<left><left>', { desc = 'replace an occurrence of a word in a file' })
+vim.keymap.set('n', '<leader>rr', ':%s/\\<<C-r><C-w>\\>//g<left><left>',
+  { desc = 'replace an occurrence of a word in a file' })
+vim.opt.scrolloff = 999
