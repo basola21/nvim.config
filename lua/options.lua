@@ -79,3 +79,5 @@ vim.opt.confirm = true
 vim.opt.scrolloff = 999
 
 vim.o.foldlevelstart = 99
+
+vim.opt.termguicolors = true
