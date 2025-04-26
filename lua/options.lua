@@ -70,3 +70,12 @@ vim.opt.confirm = true
 
 --
 -- vim: ts=2 sts=2 sw=2 et
+
+-- folding
+-- vim.opt.foldmethod = 'expr'
+-- vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+-- vim.opt.foldlevelstart = 99
+--
+vim.opt.scrolloff = 999
+
+vim.o.foldlevelstart = 99

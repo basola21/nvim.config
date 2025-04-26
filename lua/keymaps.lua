@@ -70,4 +70,5 @@ end, { desc = 'Dismiss all notifications' })
 --
 vim.keymap.set('n', '<leader>rr', ':%s/\\<<C-r><C-w>\\>//g<left><left>',
   { desc = 'replace an occurrence of a word in a file' })
-vim.opt.scrolloff = 999
+
+vim.keymap.set('n', '<leader>z', 'zjza', { desc = 'toggle next fold' })

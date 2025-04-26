@@ -78,6 +78,8 @@ require('lazy').setup({
 
   require 'plugins/smear_curosr',
 
+  require 'plugins/ufo',
+
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
   --
