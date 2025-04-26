@@ -39,6 +39,7 @@ require('lazy').setup({
 
   require 'plugins/mini',
 
+  -- treesitter
   require 'plugins/treesitter',
 
   require 'plugins/lazygit',
@@ -69,21 +70,19 @@ require('lazy').setup({
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
-  -- require 'kickstart.plugins.autopairs',
+  -- require 'plugins.lint',
+  require 'plugins.autopairs',
 
   -- require 'plugins.neo-tree',
   require 'plugins/yazi',
 
-  require 'plugins/smear_curosr',
+  require 'plugins/smear_cursor',
 
   require 'plugins/ufo',
 
   require 'plugins/bufferline',
 
-  require 'plugins/indent-blankline',
-
+  require 'plugins.indent_line',
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
   --

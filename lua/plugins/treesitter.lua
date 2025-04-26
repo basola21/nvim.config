@@ -16,6 +16,18 @@ return {
         additional_vim_regex_highlighting = { 'ruby' },
       },
       indent = { enable = true, disable = { 'ruby' } },
+      textobjects = {
+        select = {
+          enable    = true,
+          lookahead = true,
+          keymaps   = {
+            ["af"] = "@function.outer",
+            ["if"] = "@function.inner",
+            ["ac"] = "@class.outer",
+            ["ic"] = "@class.inner",
+          },
+        },
+      },
     },
     -- There are additional nvim-treesitter modules that you can use to interact
     -- with nvim-treesitter. You should go explore a few and see what interests you:
@@ -24,5 +36,17 @@ return {
     --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
     --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
   },
+  {
+    "nvim-treesitter/nvim-treesitter-textobjects",
+    event = { "BufReadPost", "BufNewFile" },
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+    },
+  },
+  {
+    "nvim-treesitter/nvim-treesitter-context",
+    depends = { "nvim-treesitter/nvim-treesitter" },
+    event = { "BufReadPost", "BufNewFile" },
+  }
 }
 -- vim: ts=2 sts=2 sw=2 et

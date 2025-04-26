@@ -54,10 +54,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.keymap.set('n', '<leader>gg', '<cmd>LazyGit<CR>', { desc = 'LazyGit' })
 
 -- Flash.nvim mappings
-vim.keymap.set({ 'n', 'x', 'o' }, 's', function()
+vim.keymap.set({ 'n', 'x', 'o' }, '`', function()
   require('flash').jump()
 end, { desc = 'Flash' })
-vim.keymap.set({ 'n', 'x', 'o' }, 'S', function()
+vim.keymap.set({ 'n', 'x', 'o' }, '~', function()
   require('flash').treesitter()
 end, { desc = 'Flash Treesitter' })
 
