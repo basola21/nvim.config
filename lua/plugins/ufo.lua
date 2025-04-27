@@ -1,4 +1,4 @@
-local ftMap = { vim = 'indent', python = { 'treesitter', 'indent' } }
+local ftMap = { vim = 'indent', python = { 'treesitter', 'indent' }, go = 'treesitter', json = 'indent' }
 return {
   "kevinhwang91/nvim-ufo",
   config = function()
