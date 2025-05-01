@@ -19,7 +19,7 @@ return {
         -- Disable "format_on_save lsp_fallback" for languages that don't
         -- have a well standardized coding style. You can add additional
         -- languages here or re-enable it for the disabled ones.
-        local disable_filetypes = { c = true, cpp = true, python = true, html = true, css = true, javascript = true, typescript = true, djangohtml = true, svelte = true }
+        local disable_filetypes = { c = true, cpp = true, python = true, html = true, css = true, javascript = true, typescript = true, htmldjango = true, svelte = true }
         if disable_filetypes[vim.bo[bufnr].filetype] then
           return nil
         else
@@ -35,7 +35,6 @@ return {
         python = { 'ruff', 'black' },
         htmldjango = { 'djlint' },
         svelte = { 'deno_fmt' },
-        djangohtml = { 'djlint' },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
         -- javascript = { "prettierd", "prettier", stop_after_first = true },
